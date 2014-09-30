@@ -1,4 +1,4 @@
-#include "genetic.h"
+#include "nearest_neighbour_and_genetic.h"
 
 int main(int argc, char *argv[])
 {
@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
   printf("Nearest neighbour!\n");
   for(i = 0; i < SIZE; i++){
     printf("Partindo de %d: \n", i);
-    vizinho_mais_proximo(G,i);
+    nearest_neighbour(G,i);
 
     for (k = 0; k < G->V; k++){
       G->list[k].visited = -1;
